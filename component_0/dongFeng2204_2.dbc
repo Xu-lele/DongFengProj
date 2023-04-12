@@ -1,0 +1,95 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: DFCVT Air
+
+
+BO_ 2566890023 VC9: 6 Vector__XXX
+ SG_ Rx_rawSteerlPos : 24|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rx_staWheelmotorError : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rx_trqEngActFrmEMS : 8|8@1+ (1,-125) [0|0] "" Vector__XXX
+ SG_ Rx_staBreak : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2566889767 VC6: 7 DFCVT
+ SG_ Rx_rawwheelangle : 48|8@1+ (1,-100) [0|0] "" Vector__XXX
+ SG_ Rx_staErr2 : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rx_staErr1 : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rx_valueSumofDraftFrmEHR : 32|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ Rx_valuePositionSensorFrmEHR : 24|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ IO_vVeh : 8|16@1+ (0.00390625,0) [0|60] "" Vector__XXX
+ SG_ gearnum : 0|8@1+ (1,-3) [-3|252] "" Vector__XXX
+
+BO_ 2566886172 NAVI3: 8 Air
+ SG_ Rx_trqEngReqFrmNAVI3 : 56|8@1+ (1,-125) [0|0] "" Vector__XXX
+ SG_ Rx_cmdBrakeReq : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Rx_cmdClearWheelMotorErr : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Rx_rawtargetwheelangle : 32|8@1+ (1,-100) [0|0] "" Vector__XXX
+ SG_ Rx_rawValve4SetFrmNAVI3 : 24|8@1+ (1,-100) [-100|155] "" Vector__XXX
+ SG_ Rx_rawValve3SetFrmNAVI3 : 16|8@1+ (1,-100) [-100|155] "" Vector__XXX
+ SG_ Rx_rawValve2SetFrmNAVI3 : 8|8@1+ (1,-100) [-100|155] "" Vector__XXX
+ SG_ Rx_rawValve1SetFrmNAVI3 : 0|8@1+ (1,-100) [-100|155] "" Vector__XXX
+
+BO_ 2566885916 NAVI2: 8 Air
+ SG_ Rx_valueModeSetFrmNAVI2 : 48|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ Rx_valueDropSpeedSetFrmNAVI2 : 40|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ Rx_valueHighLmtSetFrmNAVI2 : 32|8@1+ (1,0) [0|250] "" Vector__XXX
+ SG_ Rx_valueDeepSetFrmNAVI2 : 16|16@1+ (1,0) [0|1000] "" Vector__XXX
+ SG_ Rx_vVehWrkSpdSetFrmNAVI2 : 0|16@1+ (0.00390625,0) [0|60] "" Vector__XXX
+
+BO_ 2566885660 NAVI: 8 Air
+ SG_ Rx_cmdStarPTOFrmNAVI : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rx_cmdStartEngFrmNAVI : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rx_staFrmNAVI : 32|8@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ Rx_cmdHitchFrmNAVI : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Rx_vReqFrmNAVI : 0|16@1+ (0.00390625,0) [0|60] "" Vector__XXX
+ SG_ Rx_numGrReqFrmNAVI : 16|8@1- (1,-3) [-1|1] "" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "NodeLayerModules" "";
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+

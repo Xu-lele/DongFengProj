@@ -1,0 +1,11 @@
+使用ROS回调函数,需要进行多个参数回传的情况
+
+https://www.cnblogs.com/tiderfang/p/8968124.html
+
+与感知相结合方案：回调函数每收到消息就修改一次flag，自动驾驶循环里面每循环一次判断一下flag，用一个线程来开启回调函数。
+
+看pycharm里是否可以直接运行rospy node
+
+2021.8.28 考虑使用socket通信来实现
+
+https://blog.csdn.net/qq_40723809/article/details/86585065  20210830考虑使用多进程，用一个进程来启动ros node，然后用pipe通信

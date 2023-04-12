@@ -1,0 +1,7 @@
+#! /bin/bash
+#This is a script for chmod /dev/ttyUSB0.
+date
+who
+sudo -S chmod 777 /dev/ttyUSB0 << EOF
+9090
+EOF

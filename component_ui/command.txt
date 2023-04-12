@@ -1,0 +1,2 @@
+pyuic5 - o 目标文件名.py 源文件名.ui
+pyuic5 -o helloworld.py helloworld.ui
