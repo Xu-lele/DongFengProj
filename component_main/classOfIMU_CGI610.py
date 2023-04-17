@@ -2,10 +2,11 @@
     本类实现CGI610组合导航实时信息的读取,后期可抽象为组合导航类
 """
 
-import serial
-import time
-import component_main.component.ll2xy as ll2xy
 import math
+import time
+import serial
+import component_main.component.ll2xy as ll2xy
+
 
 class Imu():
     """调用读取IMU的数据，并且将IMU传来的数据进行转换和格式化"""
