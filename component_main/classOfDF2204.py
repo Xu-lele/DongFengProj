@@ -11,7 +11,6 @@ import time
 import numpy as np
 import threading
 
-
 class CANMsgTrans(object):
     db = 0
 
