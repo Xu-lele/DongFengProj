@@ -5,7 +5,7 @@
 import math
 import time
 import serial
-import component_main.component.ll2xy as ll2xy
+import component.ll2xy as ll2xy
 
 
 class Imu():
