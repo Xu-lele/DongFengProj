@@ -1,7 +1,6 @@
 # 暂定：计算点到直线距离
 import numpy as np
 
-
 def get_distance_from_point_to_line(point, line_point1, line_point2):
     """
         note:对于两点坐标为同一点时,返回点与点的距离
