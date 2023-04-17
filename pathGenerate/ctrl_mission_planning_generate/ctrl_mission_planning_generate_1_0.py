@@ -4,7 +4,7 @@
 # @File    : ctrl_mission_planning_generate.py
 # @Software: PyCharm
 import math
-import pathGenerate.ab_line_generate_1_0 as ab_line_generate_1_0
+import pathGenerate.ab_line_generate as ab_line_generate_1_0
 from pyproj import Proj, transform
 from pyproj import Transformer
 transformer = Transformer.from_crs("epsg:32650", "epsg:4326")

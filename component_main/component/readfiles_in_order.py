@@ -1,7 +1,7 @@
 # @Time    : 2021/9/11 上午9:47
 # @Author  : WenLong
 # @Email   : 47407469@qq.com
-# @File    : task_func_comp.py
+# @File    : readfiles_in_order.py
 # @Software: PyCharm
 # 进行文件遍历读取
 import os

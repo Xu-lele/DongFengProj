@@ -4,7 +4,7 @@
 # @File    : exception_handling_func.py
 # @Software: PyCharm
 # 测试下异常处理
-import data_processing.processing_component.calc_p2l as calc_p2l
+import component_main.component.calc_point2line as calc_p2l
 import math
 
 def calcAngOfY_Axis(vector):

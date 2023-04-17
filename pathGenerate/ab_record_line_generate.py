@@ -2,7 +2,7 @@
 import os, time
 from pathlib import Path
 import component_main.classOfIMU_CGI610 as classOfIMU_CGI610
-import ab_line_generate_1_0
+import ab_line_generate
 
 
 def check_mkdir(folder_path):

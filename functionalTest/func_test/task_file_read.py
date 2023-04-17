@@ -6,8 +6,10 @@
 # 测试任务文件的读取
 import os
 
-# 读取任务文件，判断is_work,然后执行
-ctrl_miss_path = "/home/wen/PycharmProjects/dongFengProj_1.1/pathGenerate/ctrl_mission_planning"
+ctrl_miss_path = os.path.abspath(os.path.join(os.path.abspath(os.path.dirname(__file__)), "../../pathGenerate/ctrl_mission_planning"))
+
+print("轨迹文件的路径是： " + ctrl_miss_path + " 运行失败请检查文件路径是否正确")
+
 task_dict = {}
 for root, dirs, files in os.walk(ctrl_miss_path):
     for file in files:

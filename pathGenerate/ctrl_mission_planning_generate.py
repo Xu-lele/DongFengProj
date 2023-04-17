@@ -12,7 +12,7 @@ from matplotlib import pyplot as plt
 # from pyproj import Proj, transform
 from pyproj import Transformer
 from typing import Tuple
-import ab_line_generate_1_0
+import ab_line_generate
 import bezier_gen
 
 transformer = Transformer.from_crs("epsg:32650", "epsg:4326")

@@ -29,21 +29,21 @@ def check_mkdir(path_prefix):
 
 
 def button_serial_clicked(ui):
-    if os.system("component_main/sudo_chmod_777") == 0:
+    if os.system("component_main/chmod_batch_file/sudo_chmod_777") == 0:
         ui.pushButton_serial.setText("serial初始化成功")
     else:
         ui.pushButton_serial.setText("serial初始化失败")
 
 
 def button_pcan_clicked(ui):
-    if os.system("component_main/modprobe_peak_usb_forDongFeng2204") == 0:
+    if os.system("component_main/chmod_batch_file/modprobe_peak_usb_forDongFeng2204") == 0:
         ui.pushButton_pcan.setText("pcan初始化成功")
     else:
         ui.pushButton_pcan.setText("pcan初始化失败")
 
 
 def button_vcan_clicked(ui):
-    if os.system("component_main/modprobe_vcan") == 0:
+    if os.system("component_main/chmod_batch_file/modprobe_vcan") == 0:
         ui.pushButton_vcan.setText("vcan初始化成功")
     else:
         ui.pushButton_vcan.setText("vcan初始化失败")

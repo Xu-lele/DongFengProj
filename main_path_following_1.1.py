@@ -13,16 +13,14 @@ import component_main.classOfDataRecord as classOfDataRecord
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
-from PyQt5 import QtCore
 
 # import component_main.helloworld as helloworld
 import component_ui.driving_information_board as driving_information_board
-from multiprocessing import Process
 import os
 import component_main.classOfTractorInfoRead as classOfTractorInfoRead
-import data_processing.processing_component.calc_p2l as calc_p2l
+import component_main.component.calc_point2line as calc_p2l
 import component_ui.ui_module_main_path_following_1_1 as ui_module
-import component_main.task_func_comp as task_func_comp
+import component_main.component.readfiles_in_order as readfiles_in_order
 import component_main.severTest1 as perception_process_ser
 
 # debug
@@ -270,7 +268,7 @@ class WorkOperation(object):
         # 该函数被调用，然后是主线程阻塞在该函数里
         # 加载之前的任务，监测是否任务完成，若完成进行新任务，若未完成进行续作
         # 读取最后一个文件，判断任务是否结束
-        legacy_return = task_func_comp.is_task_legacy("/home/wen/PycharmProjects/dongFengProj_1.1/pathRecord/ctrlCAN")
+        legacy_return = readfiles_in_order.is_task_legacy("/home/wen/PycharmProjects/dongFengProj_1.1/pathRecord/ctrlCAN")
         x_y_path = "0_"
         x_y_index = 0
         if len(legacy_return) == 2:
@@ -351,7 +349,7 @@ class WorkOperation(object):
 
     # def is_task_legacy(self):
     #     # 检查是否有遗留任务，若有，返回文件名和index。若无返回0
-    #     task_func_comp.is_task_legacy()
+    #     readfiles_in_order.is_task_legacy()
     #     pass
 
     # 作业路径直线（曲线）跟踪，机具全部放下

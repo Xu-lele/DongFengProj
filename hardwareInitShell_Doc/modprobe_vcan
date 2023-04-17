@@ -1,8 +1,0 @@
-#! /bin/bash
-#This is a script for opening vcan.
-date
-who
-sudo modprobe vcan
-sudo ip link add dev can0 type vcan
-ifconfig -a
-sudo ip link set dev can0 up
