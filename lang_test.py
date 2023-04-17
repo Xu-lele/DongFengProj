@@ -1,7 +1,7 @@
 # 测试提升器命令发送
 import time
 
-import component_0.classOfDF2204 as classOfDF2204
+import component_main.classOfDF2204 as classOfDF2204
 
 tractor = classOfDF2204.Tractor("send")
 vcu_cmd = classOfDF2204.VCUCmd(tractor)

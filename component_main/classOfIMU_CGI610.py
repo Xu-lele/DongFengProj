@@ -4,11 +4,11 @@
 
 import serial
 import time
-import component_0.ll2xy as ll2xy
-import os, sys, stat
+import component_main.component.ll2xy as ll2xy
 import math
 
 class Imu():
+    """调用读取IMU的数据，并且将IMU传来的数据进行转换和格式化"""
     def __init__(self):
         """初始化端口，等待调用读取即可"""
         portx = "/dev/ttyUSB0"
@@ -97,6 +97,7 @@ class Imu():
 
         return [utm_x, utm_y, GPSWeek, GPSTime, Heading, Pitch, Roll, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, Latitude, Longitude,
                 Altitude, Ve, Vn, Vu, V, NSV1, NSV2, Status, Age, Warming]
+
 
 
 if __name__ == "__main__":

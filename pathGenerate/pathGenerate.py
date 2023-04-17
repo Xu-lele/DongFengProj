@@ -1,8 +1,8 @@
 # 程序一运行就开始记录小车的轨迹，以一定的时间间隔，这样来减少记录的点数
 # 重点就是读取IMU数据并保存为csv
 import time
-import component_0.classOfIMU_CGI610 as classOfIMU_CGI610
-import component_0.classOfDataRecord as classOfDataRecord
+import component_main.classOfIMU_CGI610 as classOfIMU_CGI610
+import component_main.classOfDataRecord as classOfDataRecord
 
 imu = classOfIMU_CGI610.Imu()
 path = r'pathRecord/'

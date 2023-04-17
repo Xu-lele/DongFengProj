@@ -49,15 +49,15 @@ class Tractor(object):
     # __NAVI3_msg_list = [0, 0, 0, 0]    # 第一版协议
     __NAVI3_msg_list = [0, 0, 0, 0, 0, 0, 0, 0]  # debug 20210930 已修改完成
     __VC6_msg_list = [0, 0, 0, 0, 0, 0]
-    # __can_msg_trans = CANMsgTrans("/home/wen/PycharmProjects/dongFengProj_1.0/component_0/dongFeng2204_2.dbc")
-    __can_msg_trans = CANMsgTrans("/home/wen/PycharmProjects/dongFengProj_1.1/component_0/dongFeng2204_2.dbc")
+    # __can_msg_trans = CANMsgTrans("/home/wen/PycharmProjects/dongFengProj_1.0/component_main/dongFeng2204_2.dbc")
+    __can_msg_trans = CANMsgTrans("/home/wen/PycharmProjects/dongFengProj_1.1/component_main/dongFeng2204_2.dbc")
 
     # __msg = can_msg_trans.can_msg_produce("NAVI", self.__NAVI_msg_list)
 
     def __init__(self, flag):
         # 新增权限赋予
-        # print(os.system("./component_0/modprobe_peak_usb_forDongFeng2204"))  # 这样会不会使得成为单例模式？
-        # print(os.system("./component_0/modprobe_vcan"))    # 测试时候使用
+        # print(os.system("./component_main/modprobe_peak_usb_forDongFeng2204"))  # 这样会不会使得成为单例模式？
+        # print(os.system("./component_main/modprobe_vcan"))    # 测试时候使用
 
         self.can_bus = can.interface.Bus('can0', bustype='socketcan', bitrate=250000)
         if flag == "send":  # 当前是发送消息的功能

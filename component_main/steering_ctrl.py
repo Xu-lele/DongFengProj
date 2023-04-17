@@ -1,7 +1,7 @@
 import math
 import time
 
-import component_0.classOfPID as classOfPID
+import component_main.classOfPID as classOfPID
 
 
 def new_pcontrol(target, current, Kp, Ki, Kd):

@@ -1,7 +1,7 @@
 # 打AB点，并生成点集保存
 import os, time
 from pathlib import Path
-import component_0.classOfIMU_CGI610 as classOfIMU_CGI610
+import component_main.classOfIMU_CGI610 as classOfIMU_CGI610
 import ab_line_generate_1_0
 
 

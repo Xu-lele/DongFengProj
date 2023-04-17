@@ -2,12 +2,12 @@
 import random
 import threading
 import time
-import component_0.classOfIMU_CGI610 as classOfIMU_CGI610
-import component_0.classOfDF2204 as classOfDongFengSF2204
+import component_main.classOfIMU_CGI610 as classOfIMU_CGI610
+import component_main.classOfDF2204 as classOfDongFengSF2204
 # import classOfYunLe
 import math
-import component_0.steering_ctrl as steering_ctrl
-import component_0.classOfDataRecord as classOfDataRecord
+import component_main.steering_ctrl as steering_ctrl
+import component_main.classOfDataRecord as classOfDataRecord
 # import classOfCollect_info
 
 import sys
@@ -15,15 +15,15 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
 from PyQt5 import QtCore
 
-# import component_0.helloworld as helloworld
+# import component_main.helloworld as helloworld
 import component_ui.driving_information_board as driving_information_board
 from multiprocessing import Process
 import os
-import component_0.classOfTractorInfoRead as classOfTractorInfoRead
+import component_main.classOfTractorInfoRead as classOfTractorInfoRead
 import data_processing.processing_component.calc_p2l as calc_p2l
 import component_ui.ui_module_main_path_following_1_1 as ui_module
-import component_0.task_func_comp as task_func_comp
-import component_0.severTest1 as perception_process_ser
+import component_main.task_func_comp as task_func_comp
+import component_main.severTest1 as perception_process_ser
 
 # debug
 imu = classOfIMU_CGI610.Imu()

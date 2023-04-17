@@ -6,9 +6,9 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from functools import partial
 from PyQt5 import QtCore
 import component_ui.status_info_display as status_info_display
-import component_0.classOfDF2204 as classOfDF2204
+import component_main.classOfDF2204 as classOfDF2204
 import threading
-import component_0.classOfTractorStatusDataRecord as classOfTractorStatusDataRecord
+import component_main.classOfTractorStatusDataRecord as classOfTractorStatusDataRecord
 import ctypes   # 使用ctypes结束线程需要设计线程是可以直接杀死的，而没有临界资源的占用
 import inspect
 
@@ -29,21 +29,21 @@ def check_mkdir(path_prefix):
 
 
 def button_serial_clicked(ui):
-    if os.system("./component_0/sudo_chmod_777") == 0:
+    if os.system("component_main/sudo_chmod_777") == 0:
         ui.pushButton_serial.setText("serial初始化成功")
     else:
         ui.pushButton_serial.setText("serial初始化失败")
 
 
 def button_pcan_clicked(ui):
-    if os.system("./component_0/modprobe_peak_usb_forDongFeng2204") == 0:
+    if os.system("component_main/modprobe_peak_usb_forDongFeng2204") == 0:
         ui.pushButton_pcan.setText("pcan初始化成功")
     else:
         ui.pushButton_pcan.setText("pcan初始化失败")
 
 
 def button_vcan_clicked(ui):
-    if os.system("./component_0/modprobe_vcan") == 0:
+    if os.system("component_main/modprobe_vcan") == 0:
         ui.pushButton_vcan.setText("vcan初始化成功")
     else:
         ui.pushButton_vcan.setText("vcan初始化失败")

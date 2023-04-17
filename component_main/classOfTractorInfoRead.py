@@ -1,7 +1,7 @@
 # 拖拉机信息更新类，无延迟读取拖拉机信息，并提供函数返回所需的状态
 import threading
 import time
-import component_0.classOfDF2204 as classOfDF2204
+import component_main.classOfDF2204 as classOfDF2204
 
 
 class TractorInfoRead(object):

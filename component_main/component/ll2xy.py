@@ -7,7 +7,7 @@
 # from pyproj import Proj, transform
 from pyproj import Transformer
 import time
-import component_0.component.ll2xy_cpp as ll2xy_cpp
+import component_main.component.ll2xy_cpp as ll2xy_cpp
 
 
 # WGS84 = Proj(init='EPSG:4326')  # WGS84

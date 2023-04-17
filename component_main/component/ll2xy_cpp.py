@@ -2,7 +2,7 @@
 import ctypes
 import time
 # 指定动态链接库
-lib = ctypes.cdll.LoadLibrary('/home/wen/PycharmProjects/dongFengProj_1.1/component_0/component/ll2xy_core.so')  # 这个库的地址是相对于调用模块的地址，后期写一个地址传递
+lib = ctypes.cdll.LoadLibrary('/home/wen/PycharmProjects/dongFengProj_1.1/component_main/component/ll2xy_core.so')  # 这个库的地址是相对于调用模块的地址，后期写一个地址传递
 #需要指定返回值的类型，默认是int
 # lib.my_calculate.restype = ctypes.c_double
 lib.my_trans.restype = ctypes.c_int
