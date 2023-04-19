@@ -47,7 +47,7 @@ def ab_line_generate(a_point, b_point, seq_distance):
 
 if __name__ == "__main__":
     seq_distance = 0.5
-    folder_path = "../data/point_a_b"+time.strftime("%Y-%m-%d", time.localtime())
+    folder_path = "../data/point_a_b/"+time.strftime("%Y-%m-%d", time.localtime())
     # 判断文件是否存在，不存在则创建
     check_mkdir(folder_path)
     # 判断是否有A文件
